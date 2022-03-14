@@ -83,7 +83,7 @@ do {
     if (continuar == 'sim') {
         continue;
     } else if (continuar == 'nao') {
-        console.log('End Game!');
+        console.log("End Game!")
         break;
     }
 } while (continuar == 'sim');
