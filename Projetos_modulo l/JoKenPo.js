@@ -1,6 +1,6 @@
 //comando para prompt!
 const prompt = require('prompt-sync')();
-//variaveis inclusas no jogo
+//variaveis inclusas no jogo!
 do {
     let rodadas = 0;
     let win = 0;
