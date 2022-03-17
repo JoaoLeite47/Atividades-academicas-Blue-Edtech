@@ -77,6 +77,13 @@ do {
     console.log(
         `parabéns! Você obteve: ${win} vitórias, ${fail} derrotas e ${num} empates!`,
     );
+    if (win > fail) {
+        console.log('Você foi o grande campeão!');
+    } else if (win < fail) {
+        console.log('Você foi o grande...perdedor!');
+    } else if (win == fail) {
+        console.log('Não houve vencedores!');
+    }
     //lopping para rejogar!
     var continuar = prompt('deseja continuar?(sim ou nao)! ').toLowerCase();
     if (continuar == 'sim') {
