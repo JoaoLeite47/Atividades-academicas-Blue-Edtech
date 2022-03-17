@@ -50,7 +50,7 @@ while (true) {
             console.log(
                 'Você conquistou muitos objetivos!! mas ainda há muito a aprender!!',
             );
-        } else if (calculo === 2 || 1) {
+        } else if (calculo === 2 || calculo === 1) {
             console.log(
                 ' Até no crime existem pessoas que não foram feitas pra isso!! mais sorte na próxima!',
             );
