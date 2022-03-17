@@ -6,7 +6,7 @@ console.log(
 console.log(
     '\nMas...para isso você deve provar que é um bom homem de negócios!! Hehehe, preparado?...Vamos lá!\n',
 );
-//perguntas iniciais!
+//perguntas iniciais!!
 //looping inicial do questionário em number!
 while (true) {
     let pergunta0 = +prompt(
