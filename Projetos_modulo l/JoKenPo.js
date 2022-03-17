@@ -19,14 +19,13 @@ do {
         jogadas_player.push(jogadas_config);
         let jogadas_config2 = jogadas[random_number];
         jogadas_pc.push(jogadas_config2);
+
         console.log(`o computador escolheu: ${jogadas_pc}`);
         //funcionamento da quebra de código!
         if (isNaN(jogadas_config)) {
             // Quebra de codigo em caso de NaN
             console.log('por favor!, apenas (1) ou (2) ou (3)');
             break;
-        } else {
-            console.log('\nVamos jogar!!');
         }
         //funcionamento do score!
         for (var final_player of jogadas_player) {
@@ -79,11 +78,11 @@ do {
         `parabéns! Você obteve: ${win} vitórias, ${fail} derrotas e ${num} empates!`,
     );
     //lopping para rejogar!
-    var continuar = prompt('deseja continuar?(sim ou nao)! ');
+    var continuar = prompt('deseja continuar?(sim ou nao)! ').toLowerCase();
     if (continuar == 'sim') {
         continue;
     } else if (continuar == 'nao') {
-        console.log("End Game!")
+        console.log('End Game!');
         break;
     }
 } while (continuar == 'sim');
