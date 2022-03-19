@@ -24,7 +24,7 @@ do {
         //funcionamento da quebra de código!
         if (isNaN(jogadas_config)) {
             // Quebra de codigo em caso de NaN
-            console.log('por favor!, apenas (1) ou (2) ou (3)');
+            console.log('por favor!, apenas (0) ou (1) ou (2)');
             break;
         }
         //funcionamento do score!
