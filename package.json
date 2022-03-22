@@ -1,0 +1,27 @@
+{
+    "name": "atividades-academicas-blue-edtech",
+    "version": "1.0.0",
+    "description": "Projetos criados durante o curso de programação da Blue Edtech",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JoaoLeite47/Atividades-academicas-Blue-Edtech.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/JoaoLeite47/Atividades-academicas-Blue-Edtech/issues"
+    },
+    "homepage": "https://github.com/JoaoLeite47/Atividades-academicas-Blue-Edtech#readme",
+    "dependencies": {
+        "node-fetch": "^3.2.3",
+        "prompt-sync": "^4.2.0"
+    },
+    "devDependencies": {
+        "prettier": "^2.5.1"
+    }
+}
