@@ -16,10 +16,7 @@ do {
         super_poder_funtion: function () {
             this.super_poder++;
         },
-        player_random: Math.floor(Math.random() * 3),
     };
-    var player_pc = [];
-    player_pc.push(variaveis_iniciais.player_random);
     // Apresentação do game!
     console.log('Olá viajante! seja bem vindo ao D.E.V.I.L! ');
     const outlander = prompt('Digite seu nome viajante! ');
@@ -32,8 +29,12 @@ do {
     console.log(`Nivel de vida em: ${variaveis_iniciais.saude}`);
     console.log(`Nivel de poder em: ${variaveis_iniciais.poder} `);
     console.log(`Nivel de Super poder em: ${variaveis_iniciais.super_poder}`);
-    //NIVEL 1
+    // NIVEL 1
     lopping_nivel1: do {
+        const player_pc = [];
+        player_random = Math.floor(Math.random() * 3)
+        player_pc.push(player_random);
+
         console.log('NIVEL 1!');
         console.log(
             `${outlander} não possui tenta habilidade em combate! Então terá que se esforçar bastante!`,
@@ -98,6 +99,10 @@ do {
     } while (true);
     //NIVEL 2
     lopping_nivel2: do {
+        const player_pc = [];
+        player_random = Math.floor(Math.random() * 3)
+        player_pc.push(player_random);
+
         console.log('NIVEL 2!');
         console.log(`${outlander} já está no segundo nível do inferno!`);
         console.log(
@@ -161,6 +166,10 @@ do {
     } while (true);
     // //NIVEL 3
     looping_nivel3: do {
+        const player_pc = [];
+        player_random = Math.floor(Math.random() * 3)
+        player_pc.push(player_random);
+
         console.log('NIVEL 3!');
         console.log(
             `${outlander} penetra profundamente o mais desesperador dos níveis infernais!`,
