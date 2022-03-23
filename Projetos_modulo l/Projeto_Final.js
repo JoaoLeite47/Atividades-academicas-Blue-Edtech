@@ -91,6 +91,14 @@ do {
                 console.log(`Sua saúde agora é ${variaveis_iniciais.saude}`);
             }
         }
+        if (decisao1 !== 'sim' && decisao1 !== 'nao') {
+            console.log('\nApenas respostas de (sim ou nao) por favor!');
+            continue lopping_nivel1;
+        }
+        if (combate1 !== 'sim' && combate1 !== 'nao')  {
+            console.log('\nApenas respostas de (sim ou nao) por favor!');
+            continue lopping_nivel1;
+        }
         if (variaveis_iniciais.saude <= 0) {
             console.log('Dead End! Terá que recomeçar!');
             continue lopping_nivel1;
@@ -157,6 +165,14 @@ do {
                 'O Súcubus acabou gostando de você...que sorte! ou não!',
             );
             console.log('Ele decide por te deixar passar!');
+        }
+        if (decisao2 !== 'sim' && decisao2 !== 'nao') {
+            console.log('\nApenas respostas de (sim ou nao) por favor!');
+            continue lopping_nivel2;
+        }
+        if (combate2 !== 'sim' && combate2 !== 'nao')  {
+            console.log('\nApenas respostas de (sim ou nao) por favor!');
+            continue lopping_nivel2;
         }
         if (variaveis_iniciais.saude <= 0) {
             console.log('Dead End! Terá que recomeçar!');
@@ -246,6 +262,14 @@ do {
                     `${outlander} não tem poder suficiente para esta batalha!`,
                 );
             }
+        }
+        if (decisao3 !== 'sim' && decisao3 !== 'nao') {
+            console.log('\nApenas respostas de (sim ou nao) por favor!');
+            continue looping_nivel3;
+        }
+        if (combate3 !== 'sim' && combate3 !== 'nao')  {
+            console.log('\nApenas respostas de (sim ou nao) por favor!');
+            continue looping_nivel3;
         }
         if (variaveis_iniciais.saude <= 0) {
             console.log('Dead End! Terá que recomeçar!');
