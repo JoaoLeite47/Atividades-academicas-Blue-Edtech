@@ -84,18 +84,15 @@ do {
                 variaveis_iniciais.saude_function();
                 console.log(`Sua saúde agora é: ${variaveis_iniciais.saude}`);
             } else if (player_pc == 2) {
-                console.log('Você recebeu um golpe crítico!');
-                variaveis_iniciais.saude_function();
-                variaveis_iniciais.saude_function();
-                variaveis_iniciais.saude_function();
-                console.log(`Sua saúde agora é ${variaveis_iniciais.saude}`);
+                console.log('Você recebeu um golpe crítico! Dead End!');
+                continue lopping_nivel1;
             }
         }
         if (decisao1 !== 'sim' && decisao1 !== 'nao') {
             console.log('\nApenas respostas de (sim ou nao) por favor!');
             continue lopping_nivel1;
         }
-        if (combate1 !== 'sim' && combate1 !== 'nao')  {
+        if (combate1 !== 'sim' && combate1 !== 'nao') {
             console.log('\nApenas respostas de (sim ou nao) por favor!');
             continue lopping_nivel1;
         }
@@ -154,11 +151,8 @@ do {
                 variaveis_iniciais.saude_function();
                 console.log(`Sua saúde agora é ${variaveis_iniciais.saude}`);
             } else if (player_pc == 2) {
-                console.log('O Súcubus é um inimígo poderoso!');
-                variaveis_iniciais.saude_function();
-                variaveis_iniciais.saude_function();
-                variaveis_iniciais.saude_function();
-                console.log(`Sua saúde agora é ${variaveis_iniciais.saude}`);
+                console.log('O Súcubus é um inimígo poderoso! Dead End!');
+                continue lopping_nivel2;
             }
         } else if (combate2 == 'nao') {
             console.log(
@@ -170,7 +164,7 @@ do {
             console.log('\nApenas respostas de (sim ou nao) por favor!');
             continue lopping_nivel2;
         }
-        if (combate2 !== 'sim' && combate2 !== 'nao')  {
+        if (combate2 !== 'sim' && combate2 !== 'nao') {
             console.log('\nApenas respostas de (sim ou nao) por favor!');
             continue lopping_nivel2;
         }
@@ -242,8 +236,7 @@ do {
                 );
             } else if (variaveis_iniciais.super_poder == 0) {
                 console.log(`${outlander} Não tem poder suficiente para isso!`);
-                variaveis_iniciais.saude_function();
-                console.log(`Sua saúde agora é ${variaveis_iniciais.saude}`);
+                continue looping_nivel3;
             }
         } else if (combate3 == 'nao') {
             if (variaveis_iniciais.super_poder == 2) {
@@ -267,7 +260,7 @@ do {
             console.log('\nApenas respostas de (sim ou nao) por favor!');
             continue looping_nivel3;
         }
-        if (combate3 !== 'sim' && combate3 !== 'nao')  {
+        if (combate3 !== 'sim' && combate3 !== 'nao') {
             console.log('\nApenas respostas de (sim ou nao) por favor!');
             continue looping_nivel3;
         }
