@@ -40,9 +40,14 @@ do {
             `${outlander} não possui tenta habilidade em combate! Então terá que se esforçar bastante!`,
         );
         console.log(
+            `Uma maldição foi lançada em ${outlander}! durante um dia inteiro, você terá que lutar pela sua vida!`,
+        );
+        console.log(
+            `Nas primeiras horas do seu dia! Você será forçado a passar por experiencias terríveis!`,
+        );
+        console.log(
             'Ao entrar no primeiro nível do Inferno você avista seu primeiro baú de tesouros!',
         );
-
         const decisao1 = prompt(
             '\nDeseja abrir o baú?(sim ou nao) ',
         ).toLowerCase();
@@ -54,10 +59,13 @@ do {
         } else if (decisao1 === 'nao') {
             console.log('Você não abriu o baú!');
         }
-
+        console.log(
+            `${outlander} terá que passar sua manhã inteira neste lugar grotesco...!`,
+        );
         console.log(
             `Ao adentrar mais fundo o primeiro nível,${outlander} encontra quem virá a ser seu primeiro inimigo!`,
         );
+        console.log(`Uma criatura bizarra e nojenta cheia de ódio e sangue!`);
         const combate1 = prompt(
             `\nVocê ataca primeiro?(sim ou nao) `,
         ).toLowerCase();
@@ -101,6 +109,10 @@ do {
             continue lopping_nivel1;
         } else {
             console.log('Você passou de nível!');
+            console.log(
+                `${outlander} conseguiu passar sua manhã inteira nesse lugar grotesco...`,
+            );
+            console.log('Mas seu pesadelo ainda está longe de acabar!');
             break lopping_nivel1;
         }
     } while (true);
@@ -115,6 +127,7 @@ do {
         console.log(
             'Sua experiência cresce cada vez mais e agora novos desafios surgirão!',
         );
+        console.log(`A tarde de ${outlander} está apenas começando...`);
         const decisao2 = prompt(
             `\n${outlander} precisará salvar um cachorrinho triste, você salvará?(sim ou nao) `,
         ).toLowerCase();
@@ -132,7 +145,13 @@ do {
             console.log(`Seu poder agora é ${variaveis_iniciais.poder}`);
         }
         console.log(
+            `Horas mais tarde, ${outlander} já consegue sentir o cheiro do enxofre e prodridão desse mundo piorar...`,
+        );
+        console.log(
             `${outlander} acaba de encontrar um Súcubos! o Demônio comandante do segundo nível do inferno!`,
+        );
+        console.log(
+            `Um demónio que não tem uma aparencia feia e tosca...e sim maquiavélica!`,
         );
         const combate2 = prompt(
             `\n${outlander} decide por atacar o demônio!(sim ou nao) `,
@@ -173,6 +192,9 @@ do {
             continue lopping_nivel2;
         } else {
             console.log('Você passou de nível!');
+            console.log(
+                `${outlander} conseguiu passar uma tarde inteira nesse lugar inescrupuloso!`,
+            );
             break lopping_nivel2;
         }
     } while (true);
@@ -189,6 +211,7 @@ do {
         console.log(
             'Aqui jáz os mais malíguinos seres do planeta Terra... os HUMANOS!',
         );
+        console.log(`A noite de ${outlander} será bem ruim!`);
         if (variaveis_iniciais.super_poder == '1') {
             const bonus = prompt(
                 `\n${outlander} tem 1 ponto de Super poder! Deseja trocar por 1 ponto de Saúde?(sim ou nao)`,
@@ -200,6 +223,9 @@ do {
         }
         console.log(
             `${outlander} avança para as profundesas do inferno! Onde encontra velhos conhecidos!`,
+        );
+        console.log(
+            'As primeiras horas do seu tormento não parecem ser tão ruins!',
         );
         const decisao3 = prompt(
             `\nVelhos amigos e familiáres vem ao seu encontro! ${outlander} falará com eles?(sim ou nao) `,
@@ -219,6 +245,12 @@ do {
                 `Seu super poder agora é ${variaveis_iniciais.super_poder}`,
             );
         }
+        console.log(
+            `Uma criatura tão horrenda e amedrontadora quando o próprio Diabo...`,
+        );
+        console.log(
+            `O responsável pela maldição infligida em ${outlander} surge em sua frente!`,
+        );
         const combate3 = prompt(
             `\nSua última batalha se inicia! ${outlander} atacará primeiro?(sim ou nao) `,
         ).toLowerCase();
@@ -269,6 +301,10 @@ do {
             continue looping_nivel3;
         } else {
             console.log('VITÓRIA!!!!');
+            console.log(
+                `${outlander}, ao final da noite, consegue destruir a sua maldição! Conseguindo fugir do inferno!`,
+            );
+            console.log(`Suas 24 horas de terror acabaram finalmente!`);
             break looping_nivel3;
         }
     } while (true);
