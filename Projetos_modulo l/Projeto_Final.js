@@ -96,7 +96,6 @@ looping_nivel1: do {
         `\nVocê ataca primeiro?(sim ou nao) `,
     ).toLowerCase();
     const random_1 = function_random();
-    console.log(random_1);
     if (combate1 == 'sim') {
         if (random_1 == 0) {
             console.log('Sorte de principiante...');
@@ -203,7 +202,6 @@ looping_nivel2: while (variaveis_iniciais.maestria == 1) {
         `\n${outlander} decide por atacar o demônio!(sim ou nao) `,
     ).toLowerCase();
     const random_2 = function_random();
-    console.log(random_2);
     if (combate2 == 'sim') {
         if (random_2 == 0) {
             console.log('Você deu um ataque crítico!');
@@ -312,7 +310,6 @@ looping_nivel3: while (variaveis_iniciais.maestria == 2) {
         `\nSua última batalha se inicia! ${outlander} atacará primeiro?(sim ou nao) `,
     ).toLowerCase();
     const random_3 = function_random();
-    console.log(random_3);
     if (combate3 == 'sim') {
         if (random_3 == 0) {
             console.log(
