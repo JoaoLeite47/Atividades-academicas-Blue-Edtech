@@ -34,7 +34,7 @@ console.log(
 console.log(`Nível de saúde: ${variaveis_iniciais.saude}`);
 console.log(`Nível de poder: ${variaveis_iniciais.poder}`);
 console.log(`Nível de fadiga: ${variaveis_iniciais.fadiga}`);
-looping_inicial: do {
+do {
     // lopping da manhâ
     looping_nivel1: do {
         console.log('Primeiro estágio(MANHÂ)!');
@@ -153,7 +153,7 @@ looping_inicial: do {
                 continue looping_nivel1;
             }
         }
-    } while (true);
+    } while (variaveis_iniciais.saude == 0);
     // lopping da tarde
     looping_nivel2: while (variaveis_iniciais.maestria == 1) {
         console.log('\nVocê passou de estágio na maldição!');
@@ -273,33 +273,34 @@ looping_inicial: do {
         console.log(
             '\nAs primeiras horas do seu tormento não parecem ser tão ruins!',
         );
-        const decisao1 = prompt(
+        const decisao5 = prompt(
             `Velhos amigos e familiáres vem ao seu encontro! ${outlander} falará com eles?(sim ou nao) `,
         ).toLowerCase();
-        if (decisao1 == 'sim') {
+        if (decisao5 == 'sim') {
             console.log(
                 `Uma miragem! ${outlander} foi enganado! O que ele está fazendo?`,
             );
             variaveis_iniciais.fadiga_function();
             console.log(`Sua fadiga agora é ${variaveis_iniciais.fadiga}`);
-        } else if (decisao1 == 'nao') {
+        } else if (decisao5 == 'nao') {
             console.log(
                 `Ao invés de falar com os amigos, ${outlander} segue em frente!`,
             );
         }
         console.log(`O cansado em ${outlander} é muito forte!`);
         console.log(`Talvez seja melhor descansar um pouco!`);
-        const decisao2 = prompt(
-            `Você irá descansar?(sim ou nao) `,
+        const decisao6 = prompt(
+            `Você irá descansar? (sim ou nao?)`,
         ).toLowerCase();
-        if (decisao2 == 'sim') {
-            console.log(`${outlander} descansa brevemente!`);
-            variaveis_iniciais.poder_function();
-            console.log(`Seu poder agora é ${variaveis_iniciais.poder}`);
-        } else if (decisao2 == 'nao') {
+        if (decisao6 === 'sim') {
+            const decisao7 = prompt(`Por quanto tempo?(1,2,3 horas?) `);
+            for (let sleeping = 0; decisao7 > sleeping; sleeping++) {
+                console.log(`${outlander} está descansando...`);
+                variaveis_iniciais.fadiga--;
+                console.log(`Sua fadiga agora é ${variaveis_iniciais.fadiga}`);
+            }
+        } else if (decisao6 === 'nao') {
             console.log(`${outlander} não descansou!`);
-            variaveis_iniciais.fadiga_function();
-            console.log(`Sua fadiga agora é ${variaveis_iniciais.fadiga}`);
         }
         if (variaveis_iniciais.fadiga > 2) {
             console.log(`${outlander} está cansado demais!`);
