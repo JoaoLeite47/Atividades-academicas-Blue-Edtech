@@ -50,9 +50,9 @@ looping_nivel1: do {
         `Nas primeiras horas do seu dia! Você será forçado a passar por experiencias terríveis!`,
     );
     console.log(
-        'Ao entrar no primeiro nível do Inferno você avista seu primeiro baú de tesouros!',
+        '\nAo entrar no primeiro nível do Inferno você avista seu primeiro baú de tesouros!',
     );
-    const decisao1 = prompt('\nDeseja abrir o baú?(sim ou nao) ').toLowerCase();
+    const decisao1 = prompt('Deseja abrir o baú?(sim ou nao) ').toLowerCase();
     if (decisao1 === 'sim') {
         console.log('Você ganhou poder!');
         variaveis_iniciais.poder_function();
@@ -62,21 +62,21 @@ looping_nivel1: do {
     }
     console.log('A sua frente, você vê uma criatura! Ela não é um monstro!');
     const decisao2 = prompt(
-        '\nDeseja lutar com ela?(sim ou nao) ',
+        'Deseja lutar com ela?(sim ou nao) ',
     ).toLowerCase();
     if (decisao2 === 'sim') {
         console.log('A criatura se revela um monstro!');
         variaveis_iniciais.fadiga_function();
         console.log(`Seu fadiga agora é ${variaveis_iniciais.fadiga}`);
-        function_random();
-        if (function_random() == 0) {
+        const random_0 = function_random();
+        if (random_0 == 0) {
             console.log('Você morreu! Terá que repetir o ciclo!');
             break looping_nivel1;
-        } else if (function_random() == 1) {
+        } else if (random_0 == 1) {
             console.log('Você acertou um golpe de sorte!');
             variaveis_iniciais.fadiga_function();
             console.log(`Seu fadiga agora é ${variaveis_iniciais.fadiga}`);
-        } else if (function_random() == 2) {
+        } else if (random_0 == 2) {
             console.log('Você acertou um golpe crítico!');
             variaveis_iniciais.poder_function();
             console.log(`Seu poder agora é ${variaveis_iniciais.poder}`);
@@ -86,15 +86,13 @@ looping_nivel1: do {
         console.log('Ela foi embora!');
     }
     console.log(
-        `Um ambiente tão putrido quanto esse não poderia fazer bem a ${outlander}!`,
+        `\nUm ambiente tão putrido quanto esse não poderia fazer bem a ${outlander}!`,
     );
     console.log(
         `Ao adentrar mais fundo o primeiro nível,${outlander} encontra quem virá a ser seu primeiro inimigo!`,
     );
     console.log(`Uma criatura bizarra e nojenta cheia de ódio e sangue!`);
-    const combate1 = prompt(
-        `\nVocê ataca primeiro?(sim ou nao) `,
-    ).toLowerCase();
+    const combate1 = prompt(`Você ataca primeiro?(sim ou nao) `).toLowerCase();
     const random_1 = function_random();
     if (combate1 == 'sim') {
         if (random_1 == 0) {
@@ -149,7 +147,7 @@ looping_nivel1: do {
 } while (true);
 // lopping da tarde
 looping_nivel2: while (variaveis_iniciais.maestria == 1) {
-    console.log('Você passou de estágio na maldição!');
+    console.log('\nVocê passou de estágio na maldição!');
     console.log(
         `${outlander} conseguiu passar sua manhã inteira nesse lugar grotesco...`,
     );
@@ -161,9 +159,9 @@ looping_nivel2: while (variaveis_iniciais.maestria == 1) {
     console.log(
         'Sua experiência cresce cada vez mais e agora novos desafios surgirão!',
     );
-    console.log(`A tarde de ${outlander} está apenas começando...`);
+    console.log(`\nA tarde de ${outlander} está apenas começando...`);
     const decisao3 = prompt(
-        `\n${outlander} precisará salvar um cachorrinho triste, você salvará?(sim ou nao) `,
+        `${outlander} precisará salvar um cachorrinho triste, você salvará?(sim ou nao) `,
     ).toLowerCase();
     if (decisao3 == 'sim') {
         console.log('Cachorros não vão pro inferno! você salvou um súcubos!');
@@ -180,7 +178,7 @@ looping_nivel2: while (variaveis_iniciais.maestria == 1) {
         `A criatura foge as pressas para se esconder em um lugar mais escuro! E no processo deixa cair um bolsa no chão!`,
     );
     const decisao4 = prompt(
-        `\nVocê irá pegar o bolsa?(sim ou nao) `,
+        `Você irá pegar o bolsa?(sim ou nao) `,
     ).toLowerCase();
     if (decisao4 == 'sim') {
         console.log(
@@ -199,7 +197,7 @@ looping_nivel2: while (variaveis_iniciais.maestria == 1) {
         `Um demónio que não tem uma aparencia feia e tosca...e sim maquiavélica!`,
     );
     const combate2 = prompt(
-        `\n${outlander} decide por atacar o demônio!(sim ou nao) `,
+        `${outlander} decide por atacar o demônio!(sim ou nao) `,
     ).toLowerCase();
     const random_2 = function_random();
     if (combate2 == 'sim') {
@@ -241,7 +239,7 @@ looping_nivel2: while (variaveis_iniciais.maestria == 1) {
 }
 // lopping da noite
 looping_nivel3: while (variaveis_iniciais.maestria == 2) {
-    console.log('Você passou para o último estágio da maldição!');
+    console.log('\nVocê passou para o último estágio da maldição!');
     console.log(
         `${outlander} conseguiu passar uma tarde inteira nesse lugar inescrupuloso!`,
     );
@@ -258,10 +256,10 @@ looping_nivel3: while (variaveis_iniciais.maestria == 2) {
         `${outlander} avança para as profundesas do inferno! Onde encontra velhos conhecidos!`,
     );
     console.log(
-        'As primeiras horas do seu tormento não parecem ser tão ruins!',
+        '\nAs primeiras horas do seu tormento não parecem ser tão ruins!',
     );
     const decisao1 = prompt(
-        `\nVelhos amigos e familiáres vem ao seu encontro! ${outlander} falará com eles?(sim ou nao) `,
+        `Velhos amigos e familiáres vem ao seu encontro! ${outlander} falará com eles?(sim ou nao) `,
     ).toLowerCase();
     if (decisao1 == 'sim') {
         console.log(
@@ -276,7 +274,7 @@ looping_nivel3: while (variaveis_iniciais.maestria == 2) {
     }
     console.log(`O cansado em ${outlander} é muito forte!`);
     console.log(`Talvez seja melhor descansar um pouco!`);
-    const decisao2 = prompt(`\nVocê irá descansar?(sim ou nao) `).toLowerCase();
+    const decisao2 = prompt(`Você irá descansar?(sim ou nao) `).toLowerCase();
     if (decisao2 == 'sim') {
         console.log(`${outlander} descansa brevemente!`);
         variaveis_iniciais.poder_function();
@@ -303,11 +301,11 @@ looping_nivel3: while (variaveis_iniciais.maestria == 2) {
         `${outlander} percebe que seu tempo está perto do fim! Caso ele não quebre a maldição, terá que reviver todo seu sofrimento novamente!`,
     );
     console.log(
-        `Uma criatura tão horrenda e amedrontadora quanto o próprio Diabo surge em sua frente!`,
+        `\nUma criatura tão horrenda e amedrontadora quanto o próprio Diabo surge em sua frente!`,
     );
     console.log(`O responsável pela maldição`);
     const combate3 = prompt(
-        `\nSua última batalha se inicia! ${outlander} atacará primeiro?(sim ou nao) `,
+        `Sua última batalha se inicia! ${outlander} atacará primeiro?(sim ou nao) `,
     ).toLowerCase();
     const random_3 = function_random();
     if (combate3 == 'sim') {
@@ -359,11 +357,22 @@ looping_nivel3: while (variaveis_iniciais.maestria == 2) {
     }
 }
 // final
+if (variaveis_iniciais.maestria == 0) {
+    console.log(`Você perdeu!`);
+    console.log(`A maldição continuará a atormentar ${outlander}!`);
+} else if (variaveis_iniciais.maestria == 1) {
+    console.log(`Você perdeu!`);
+    console.log(`Chegou perto do final... Mas falhou!`);
+    console.log(`A maldição continuará a atormentar ${outlander}!`);
+} else if (variaveis_iniciais.maestria == 2) {
+    console.log(`Você falhou miseravelmente perto do fim! Que vergonha!`);
+    console.log(`A maldição continuará a atormentar ${outlander}!`);
+}
 if (variaveis_iniciais.maestria == 3) {
     console.log('VITÓRIA!!!!');
     console.log(
         `${outlander}, ao final da noite, consegue destruir a sua maldição! Conseguindo fugir do inferno!`,
     );
     console.log(`Suas 24 horas de terror acabaram finalmente!`);
-    console.log(`Powered by João Leite 47`);
 }
+console.log(`Powered by João Leite 47`);
