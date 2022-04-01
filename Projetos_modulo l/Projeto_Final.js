@@ -293,7 +293,12 @@ do {
             `Você irá descansar? (sim ou nao?)`,
         ).toLowerCase();
         if (decisao6 === 'sim') {
-            const decisao7 = prompt(`Por quanto tempo?(1,2,3 horas?) `);
+            const decisao7 = +prompt(`Por quanto tempo?(1,2,3 horas?) `);
+            if (decisao7 !== 1 && decisao7 !== 2 && decisao7 !== 3) {
+                console.log('\nVocê passou dos limítes!');
+                variaveis_iniciais.saude_function();
+                console.log(`Sua saúde agora é ${variaveis_iniciais.saude}`);
+            }
             for (let sleeping = 0; decisao7 > sleeping; sleeping++) {
                 console.log(`${outlander} está descansando...`);
                 variaveis_iniciais.fadiga--;
