@@ -76,6 +76,7 @@ do {
             const random_0 = function_random();
             if (random_0 == 0) {
                 console.log('Você morreu! Terá que repetir o ciclo!');
+                variaveis_iniciais.maestria = 0;
                 break looping_nivel1;
             } else if (random_0 == 1) {
                 console.log('Você acertou um golpe de sorte!');
@@ -136,6 +137,7 @@ do {
                 console.log(
                     'Você recebeu um golpe crítico! Você morreu, terá que repetir o ciclo!',
                 );
+                variaveis_iniciais.maestria = 0;
                 break looping_nivel1;
             }
 
@@ -228,6 +230,7 @@ do {
                 console.log(
                     'O Súcubus é um inimígo poderoso! Você morreu, terá que repetir o ciclo!',
                 );
+                variaveis_iniciais.maestria = 0;
                 break looping_nivel2;
             }
         } else if (combate2 == 'nao') {
@@ -316,6 +319,7 @@ do {
         if (variaveis_iniciais.saude <= 0) {
             console.log(`${outlander} morreu! Terá que repetir o ciclo! `);
             variaveis_iniciais.saude == 0;
+            variaveis_iniciais.maestria = 0;
             break looping_nivel3;
         }
         console.log(`${outlander} segue em frente!`);
@@ -354,6 +358,7 @@ do {
                 console.log(
                     ' Por um deslize no seu ataque, você foi atingido! Você morreu! terá que repetir o ciclo!',
                 );
+                variaveis_iniciais.maestria = 0;
                 break looping_nivel3;
             }
         } else if (combate3 == 'nao') {
@@ -375,6 +380,7 @@ do {
                 console.log(
                     `${outlander} não tem poder suficiente para esta batalha! Você foi destruído! repita o ciclo!`,
                 );
+                variaveis_iniciais.maestria = 0;
                 break looping_nivel3;
             }
         }
