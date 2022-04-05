@@ -1,6 +1,6 @@
 const prompt = require('prompt-sync')(); // Importa o prompt-sync
 const variaveis_iniciais = {
-    saude: 3,
+    saude: 5,
     saude_function: function () {
         return this.saude--;
     },
@@ -56,6 +56,10 @@ do {
         const decisao1 = prompt(
             'Deseja abrir o baú?(sim ou nao) ',
         ).toLowerCase();
+        if (decisao1 !== 'sim' && decisao1 !== 'nao') {
+            console.log('\nAPENAS respostas de (sim ou nao) por favor!');
+            continue looping_nivel1;
+        }
         if (decisao1 === 'sim') {
             console.log('Você ganhou poder!');
             variaveis_iniciais.poder_function();
@@ -69,6 +73,10 @@ do {
         const decisao2 = prompt(
             'Deseja lutar com ela?(sim ou nao) ',
         ).toLowerCase();
+        if (decisao2 !== 'sim' && decisao2 !== 'nao') {
+            console.log('\nAPENAS respostas de (sim ou nao) por favor!');
+            continue looping_nivel1;
+        }
         if (decisao2 === 'sim') {
             console.log('A criatura se revela um monstro!');
             variaveis_iniciais.fadiga_function();
@@ -102,6 +110,10 @@ do {
             `Você ataca primeiro?(sim ou nao) `,
         ).toLowerCase();
         const random_1 = function_random();
+        if (combate1 !== 'sim' && combate1 !== 'nao') {
+            console.log('\nAPENAS respostas de (sim ou nao) por favor!');
+            continue looping_nivel1;
+        }
         if (combate1 == 'sim') {
             if (random_1 == 0) {
                 console.log('Sorte de principiante...');
@@ -140,20 +152,6 @@ do {
                 variaveis_iniciais.maestria = 0;
                 break looping_nivel1;
             }
-
-            if (
-                decisao1 !== 'sim' &&
-                decisao1 !== 'nao' &&
-                decisao2 !== 'sim' &&
-                decisao2 !== 'nao'
-            ) {
-                console.log('\nApenas respostas de (sim ou nao) por favor!');
-                continue looping_nivel1;
-            }
-            if (combate1 !== 'sim' && combate1 !== 'nao') {
-                console.log('\nApenas respostas de (sim ou nao) por favor!');
-                continue looping_nivel1;
-            }
         }
     } while (variaveis_iniciais.saude == 0);
     // lopping da tarde
@@ -174,6 +172,10 @@ do {
         const decisao3 = prompt(
             `${outlander} precisará salvar um cachorrinho triste, você salvará?(sim ou nao) `,
         ).toLowerCase();
+        if (decisao3 !== 'sim' && decisao3 !== 'nao') {
+            console.log('\nAPENAS respostas de (sim ou nao) por favor!');
+            continue looping_nivel2;
+        }
         if (decisao3 == 'sim') {
             console.log(
                 'Cachorros não vão pro inferno! você salvou um súcubos!',
@@ -193,6 +195,10 @@ do {
         const decisao4 = prompt(
             `Você irá pegar o bolsa?(sim ou nao) `,
         ).toLowerCase();
+        if (decisao4 !== 'sim' && decisao4 !== 'nao') {
+            console.log('\nAPENAS respostas de (sim ou nao) por favor!');
+            continue looping_nivel2;
+        }
         if (decisao4 == 'sim') {
             console.log(
                 `${outlander} encontra na bolsa um poderoso arco e flecha!`,
@@ -212,6 +218,10 @@ do {
         const combate2 = prompt(
             `${outlander} decide por atacar o demônio!(sim ou nao) `,
         ).toLowerCase();
+        if (combate2 !== 'sim' && combate2 !== 'nao') {
+            console.log('\nAPENAS respostas de (sim ou nao) por favor!');
+            continue looping_nivel2;
+        }
         const random_2 = function_random();
         if (combate2 == 'sim') {
             if (random_2 == 0) {
@@ -241,19 +251,6 @@ do {
             variaveis_iniciais.maestria_function();
             break looping_nivel2;
         }
-        if (
-            decisao3 !== 'sim' &&
-            decisao3 !== 'nao' &&
-            decisao4 !== 'sim' &&
-            decisao4 !== 'nao'
-        ) {
-            console.log('\nApenas respostas de (sim ou nao) por favor!');
-            continue looping_nivel2;
-        }
-        if (combate2 !== 'sim' && combate2 !== 'nao') {
-            console.log('\nApenas respostas de (sim ou nao) por favor!');
-            continue looping_nivel2;
-        }
     }
     // lopping da noite
     looping_nivel3: while (variaveis_iniciais.maestria == 2) {
@@ -279,6 +276,10 @@ do {
         const decisao5 = prompt(
             `Velhos amigos e familiáres vem ao seu encontro! ${outlander} falará com eles?(sim ou nao) `,
         ).toLowerCase();
+        if (decisao5 !== 'sim' && decisao5 !== 'nao') {
+            console.log('\nAPENAS respostas de (sim ou nao) por favor!');
+            continue looping_nivel3;
+        }
         if (decisao5 == 'sim') {
             console.log(
                 `Uma miragem! ${outlander} foi enganado! O que ele está fazendo?`,
@@ -295,6 +296,10 @@ do {
         const decisao6 = prompt(
             `Você irá descansar? (sim ou nao?)`,
         ).toLowerCase();
+        if (decisao6 !== 'sim' && decisao6 !== 'nao') {
+            console.log('\nAPENAS respostas de (sim ou nao) por favor!');
+            continue looping_nivel3;
+        }
         if (decisao6 === 'sim') {
             const decisao7 = +prompt(`Por quanto tempo?(1,2,3 horas?) `);
             if (decisao7 !== 1 && decisao7 !== 2 && decisao7 !== 3) {
@@ -334,6 +339,10 @@ do {
         const combate3 = prompt(
             `Sua última batalha se inicia! ${outlander} atacará primeiro?(sim ou nao) `,
         ).toLowerCase();
+        if (combate3 !== 'sim' && combate3 !== 'nao') {
+            console.log('\nAPENAS respostas de (sim ou nao) por favor!');
+            continue looping_nivel3;
+        }
         const random_3 = function_random();
         if (combate3 == 'sim') {
             if (random_3 == 0) {
